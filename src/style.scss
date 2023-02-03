@@ -91,3 +91,113 @@
 }
 
 
+.home{
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        border:1px solid white;
+        border-radius: 10px;
+        width: 65%;
+        height: 80%;
+        display: flex;
+        overflow: hidden;
+        .sidebar{
+            flex: 1;
+            background-color: #3e3c61;
+            border-radius: 10px 0  0 10px ;
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: #2f2d52;
+                height: 50px;
+                padding: 10px;
+                justify-content: space-between;
+                color: #ddddf7;
+                .logo{
+                    font-weight: bold;
+                    font-style: italic;
+                    font-family: cursive;
+                }
+                .user{
+                    display: flex;
+                    gap: 10px;
+                    img{
+                        background-color: #ddddf7;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    button{
+                        border: none;
+                        outline: none;
+                        background-color: #5d5b8d;
+                        color: #ddddf7;
+                        border-radius: 10px;
+                        font-size: 10px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .search{
+                border-bottom: 1px solid gray;
+
+                .searchForm{
+                    padding: 10px;
+                    input{
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        color: #ddddf7;
+                    }
+                }
+            }
+
+            .userChat{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+                color: #ddddf7;
+                cursor: pointer;
+                &:hover{
+                    background-color: #2f2d52;
+                }
+                img{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+
+
+                .userChatInfo{
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+
+                    }
+                    p{
+                        font-size: 14px;
+                        color: lightgray;
+                    }
+                }
+            }
+            
+
+
+
+
+        }
+        .chat{
+            flex: 2;
+        }
+    }
+}
