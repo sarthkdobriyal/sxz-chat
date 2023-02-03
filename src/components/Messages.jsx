@@ -18,15 +18,14 @@ export const Messages = () => {
         }
     },[data.chatId])
 
-
+ console.log(messages)
   return (
     <div className='messages'>
         {
             
-            messages.map((message) => {
+            messages.map((message) => (
                 <Message message={message} key={message.id} />
-
-            })
+            ))
         }
 
     </div>
