@@ -7,9 +7,10 @@ import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 
 
+
 function App() {
   const  currentUser  = useContext(AuthContext)
-  console.log("from app",currentUser)
+  
 
   const ProtectedRoute = ({children}) => {
     if(!currentUser){
