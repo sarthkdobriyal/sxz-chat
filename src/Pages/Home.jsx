@@ -6,7 +6,9 @@ function Home() {
   return (
     <div className='home'>
       <div className='container'>
+        {/* LeftSide */}
           <Sidebar />
+          {/* RightSide */}
           <Chat />
       </div>
 
