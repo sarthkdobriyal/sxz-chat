@@ -5,10 +5,12 @@ import {  ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { storage } from '../firebase';
 import { doc, setDoc } from "firebase/firestore"; 
 import db  from '../firebase';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Register() {
 
   const [err, setErr] = useState(false)
+  const navigate = useNavigate();
 
 
   const handleSubmit = async (e) => {
@@ -42,14 +44,10 @@ function Register() {
             email,
             photoURL:downloadURL,
           })
+          await setDoc(doc(db,"userChats", res.user.uid), {})
+          navigate("/");
           
         })
-
-
-
-
-
-
       }
       catch(err){
         setErr(true);
@@ -81,7 +79,7 @@ function Register() {
                 <button className='button'>Sign Up</button>
                 {err && <span>Error</span>}
             </form>
-            <p>Already have an account? Login</p>
+            <p>Already have an account? <Link to="/login">Login</Link></p>
         </div>
 
     </div>
