@@ -75,6 +75,13 @@
                border: none;
                border-radius: 10px;
                font-weight: bold;
+               cursor: pointer;
+               &:hover{
+                background-color: rgba(66, 144, 62, 0.824);
+               }
+               &:active{
+                transform: translateY(4px);
+               }
             }
 
 
@@ -167,6 +174,12 @@
                         font-size: 12px;
                         font-weight: bold;
                         cursor: pointer;
+                        &:hover{
+                            background-color: rgba(67, 40, 40, 0.908);                           
+                           }
+                           &:active{
+                            transform: translateY(4px);
+                           }
                         @include tablet{
                             position: absolute;
                             bottom: 10px;
@@ -400,6 +413,13 @@
                         @include tablet{
                             font-size: 10px;
                         }
+                        &:hover{
+                            background-color: rgba(114, 110, 110, 0.57);
+                            color: #5d5b8d;
+                           }
+                           &:active{
+                            transform: translateY(4px);
+                           }
                     }
                 }
             }

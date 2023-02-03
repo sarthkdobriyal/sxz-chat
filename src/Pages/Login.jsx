@@ -26,7 +26,7 @@ function Login() {
   return (
     <div className='register__container'>
         <div className='form-wrapper'>
-            <span className='logo'>SXZ Chat</span>
+            <span className='logo'>SxZ Chat</span>
             <span className='title'>Login</span>
             <form className='form' onSubmit={handleSubmit}>
                 
