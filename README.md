@@ -1,5 +1,5 @@
 # A chat application created using ReactJs and Google Firebase
-A chat application is a software program designed to facilitate real-time conversation between users over the internet. The application allows users to log in and out, create accounts using email and password, search for other users, and engage in real-time conversations with anyone. The date and time of the chats are also displayed. This chat application was created using ReactJs and Google Firebase, along with React Router and Sass for additional functionality and styling.
+Sxz Chat is a web application designed to facilitate real-time conversation between users over the internet. The application allows users to log in and out, create accounts using email and password, search for other users, and engage in real-time conversations with anyone. The date and time of the chats are also displayed. This chat application was created using ReactJs and Google Firebase, along with React Router and Sass for additional functionality and styling.
 ## Core Development Work:
 
 - Implement login/logout functionality using Firebase authentication.
